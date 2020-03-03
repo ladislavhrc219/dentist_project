@@ -1,0 +1,53 @@
+
+html {
+   
+    font-family: 'Nunito Sans', sans-serif;
+    
+    padding-left: 3rem;
+    padding-right: 3rem;
+    // background-position: center;
+    // background-size: cover;
+
+    background-color: whitesmoke;
+    // background: radial-gradient(circle, rgb(34, 0, 19), rgb(164, 2, 196));
+    // background-image: linear-gradient(rgba(173, 162, 8, 0.555)),url("../img/city.jpeg");
+
+}
+
+.media {
+    margin: 5em 5em;
+    // margin-bottom: 30px;
+}
+.jumbotron {
+        background-color: white;
+        // padding-bottom: -2px;
+        // color: black;
+    }
+
+.navbar  {
+        padding-left: 5em;
+}
+// .nav-link {
+//     color: rgb(150, 255, 150);
+// }
+
+body {
+    h1{
+        color: rgb(150, 255, 150);
+        // padding-top: rem;
+    }
+    h2, h3, p {
+        color:  snow;
+    }
+    p {
+        font-size: 18px;
+    }
+    
+    .hfck{
+        color: darkorange;
+        font-size: 28px;
+    }
+    margin:0;
+    padding:0;
+
+}
