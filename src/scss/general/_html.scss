@@ -13,10 +13,9 @@ html {
     // background-image: linear-gradient(rgba(173, 162, 8, 0.555)),url("../img/city.jpeg");
 
 }
-
-.media {
-    margin: 5em 5em;
-    // margin-bottom: 30px;
+.logo_one{
+    width: 200px;
+    margin-right: 20px;
 }
 .jumbotron {
         background-color: white;
@@ -25,28 +24,34 @@ html {
     }
 
 .navbar  {
-        padding-left: 5em;
+    padding-left: 5em;
 }
-// .nav-link {
-//     color: rgb(150, 255, 150);
-// }
 
+.media{
+    padding: 5em 5em;
+    // margin-bottom: 30px;
+    // background-image: linear-gradient(rgba(173, 162, 8, 0.555)),url("../../img/brush.jpg");
+    // background-image:url("../../img/brush.jpg");
+     background-position: center;
+    background-size: cover;
+    
+    height: 300px;
+}
 body {
     h1{
-        color: rgb(150, 255, 150);
+        color: rgb(0, 240, 248);
+        font-size: 60px;
+        font-size: 20rem;
         // padding-top: rem;
     }
     h2, h3, p {
-        color:  snow;
+        color:  rgb(251, 255, 250);
     }
     p {
         font-size: 18px;
     }
     
-    .hfck{
-        color: darkorange;
-        font-size: 28px;
-    }
+
     margin:0;
     padding:0;
 
