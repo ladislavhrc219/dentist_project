@@ -276,20 +276,20 @@
         
 
             <!-- =========================================================== -->
-            <!--  CONACT -->
+            <!--  CONtACT -->
             <!-- =========================================================== -->   
-            <div class="card card-body bg-warning">
-              <strong class="text-light py-4">CORONA</strong>
-            </div>
-<section id="contact" class="py-6 bg-info">
+            
+<section id="contact" class="py-6 bg-dark">
   <div class="container">
     <!-- secton title  -->
     <div class="row">
-      <div class="col col-12 text-center">
+      <div class="col col-12 text-center text-light">
         <!-- <h1 class="display-4 text-uppercase text-dark mb-1"> YOO </h1> -->
-        <strong> CONTACT </strong>
+        <!-- <strong> CONTACT </strong> -->
         <!-- <h2 class="display-6 text-lowercase text-dark bg-warning mb-1"> BOO  </h2> -->
-       
+        <div class="card card-body bg-dark">
+            <strong class="text-light py-2 text-uppercase">Contact</strong>
+          </div>
         <!-- <p class="mt-2 text-center bg-danger"> HOOLLY MOLLY </p> -->
         <!-- <h4 class="mt-3 text-center text-light bg-dark">MARIQUAS </h4> -->
       </div>
@@ -297,10 +297,12 @@
   </div>
 </section>
 
-
-
+<!-- *BETTER COMMeNTS extension -->
+<!-- ?hey  -->
+<!-- ! dont postpone graphQL  -->
+<!-- TODO finish form map -->
 <!-- ======================================================================= -->
-<!-- FORM &MAP  -->
+<!-- FORM &MAP   -->
 <!-- ======================================================================= -->
       
 
@@ -311,48 +313,104 @@
     <div class="card card-body bg-secondary ">
       <div class="card card-title text-center text-dark">
         <h2 class="text-capitalize text-dark">Write us</h2>
-        <p class="text-dark"> new user sign in</p>
+        <!-- <p class="text-dark"> new user sign in</p> -->
       </div>
       <!-- end of title -->
       <form>
 <!-- simple form -->
 <div class="form-group mt-3">
-  <input type="text" class="form-control form-control-lg" name="" id="name">
+  <input type="text" class="form-control form-control-sm" placeholder="customer name" name="" id="name">
 </div>
 <!-- email -->
 <div class="form-group mt-3">
-    <input type="email" class="form-control" name="" id="email" 
+    <input type="email" class="form-control form-control-sm" name="" id="email" 
       placeholder="email"> 
   </div>
 <!-- phone -->
   <div class="form-group mt-3">
       <input type="phone" class="form-control form-control-sm" placeholder="phone" name="" id="phone">
     </div>
+    <!-- ? input group -->
 
+    <div class="input-group my-">
+      <div class="input-group-prepend">
+        <span class="input-group-text text-uppercase ">Username</span>
 
-
-
+      </div>
+      <input type="text" name="" class="form-control" id="group-username">
+    </div>
+    <!-- ?font-awesome -->
+    <div class="input-group my-">
+      <div class="input-group-prepend">
+        <!-- ? prepend -->
+        <span class="input-group-text mt-3">
+          <i class="fas fa-user"></i>
+        </span>
+        <!-- ? end of prepend -->
+      </div>
+      <input type="text" name="" class="form-control mt-3" id="group-username-1"
+      placeholder="username">
+      <!-- ? append -->
+      <div class="input-group-append" >
+        <button type="button" class="btn btn-primary mt-3"> SUBMIT</button>
+      </div>
+    </div>
+    <div class="mt-3">
+        <button type="submit" class="btn btn-outline-light btn-block text-uppercase">Sign up here</button>
+    </div>
+    
       </form>
+      
+      
 
     </div>
 
-    <!-- GOOGLE MAPS -->
-  <div class="col-md-6 my-3">
+  
+ 
+</div>
+  <!-- ? GOOGLE MAPS -->
+<div class="col-md-6 my-3">
     <div class="embed-responsive embed-responsive-4by3">
         <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83327.54708892763!2d-123.19411527226673!3d49.25771417757945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673f143a94fb3%3A0xbb9196ea9b81f38b!2sVancouver%2C%20BC%2C%20Canada!5e0!3m2!1sen!2ssk!4v1583356941922!5m2!1sen!2ssk" width="800" height="850" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </div>
-
   </div>
-</div>
 
 <!-- ======================================================================= -->
-<!-- GOOGLE MAP SECTION -->
+<!--? ??? REVIEW SECTIOM -->
 <!-- ======================================================================= -->
-      <div <div class="form-group">
-        <label for=""></label>
-        <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="">
-        <small id="emailHelpId" class="form-text text-muted">Help text</small>
+<!-- <div class="row">    -->
+<div class="container">
+<section class="col col-md-12 py-5 bg-muted" id="review" >
+
+  <!-- section title -->
+  <div class="row">
+    <div class=" col text-center">
+      <h3 class="display-4 text-uppercase text-light mb-0 bg-dark">
+        <strong> REVIEW </strong>
+      </h3>
+      <!-- <div class="title-underline bg-secondary"> YO             </div> -->
+      <!-- <p id="mt-2" class="text-capitalize text-muted">LOREM </p> -->
+
+    </div>
+  </div>
+
+  <div class="row">
+      <div class="col-md-6 my-4">
+        <!-- ? IMAGE DISAPPER can be done to other sctions -->
+        <img src="./img/brush.jpg" class="img-fluid rounded-circle d-none d-md-block" alt="brush">
       </div>
+      <div class="col-md-6 my-4">
+        <blockquote class="blockquote text-right text-dark">
+          <p class="text-dark"> <i class="fas fa-quote-left fa-2x mr-3 text-dark"></i> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque iste ipsam laudantium in? Nostrum, porro?</p>
+            <footer class="blockquote-footer text-left"> MASTER MIND</footer>
+        </blockquote>
+      </div>
+    </div>
+  
+
+</section>
+</div>
+<!-- </div>    -->
 
 
 
@@ -365,6 +423,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
-</html>
+
 
 </html>
