@@ -2,25 +2,15 @@
 html {
    
     font-family: 'Nunito Sans', sans-serif;
-    
     padding-left: 3rem;
     padding-right: 3rem;
-    // background-position: center;
-    // background-size: cover;
-
     background-color: whitesmoke;
     // background: radial-gradient(circle, rgb(34, 0, 19), rgb(164, 2, 196));
     // background-image: linear-gradient(rgba(173, 162, 8, 0.555)),url("../img/city.jpeg");
+}
 
-}
-.logo_one{
-    width: 200px;
-    margin-right: 20px;
-}
 .jumbotron {
         background-color: white;
-        // padding-bottom: -2px;
-        // color: black;
     }
 
 .navbar  {
@@ -28,21 +18,16 @@ html {
 }
 
 .media{
-    padding: 5em 5em;
-    // margin-bottom: 30px;
-    // background-image: linear-gradient(rgba(173, 162, 8, 0.555)),url("../../img/brush.jpg");
-    // background-image:url("../../img/brush.jpg");
-     background-position: center;
-    background-size: cover;
-    
-    height: 300px;
+    padding: 5em 5em;    
+    height: 25rem;
 }
 body {
+    height: 100%;
     h1{
-        color: rgb(0, 240, 248);
-        font-size: 60px;
-        font-size: 20rem;
-        // padding-top: rem;
+        color: rgb(15, 36, 105);
+        letter-spacing: 18px;
+        padding-bottom: 2rem;
+        font-size: 4rem;
     }
     h2, h3, p {
         color:  rgb(251, 255, 250);
@@ -50,9 +35,41 @@ body {
     p {
         font-size: 18px;
     }
-    
-
     margin:0;
     padding:0;
+    
 
+}
+
+
+#sticky-footer {
+    flex-shrink: none;
+  }
+
+nav {
+   
+    background: #43BFC7;
+}
+
+
+  footer {
+      padding: 30px;
+    //   background: dark;
+  }
+
+  .about__us {
+    background: #43BFC7;
+
+  }
+//   #contact{
+    // background: #43BFC7;
+
+//   }
+
+.social {
+    background: #43BFC7;
+}
+
+#cards-pricing {
+    background: #43BFC7;
 }
