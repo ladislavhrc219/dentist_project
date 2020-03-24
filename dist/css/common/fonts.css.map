@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/fonts.scss"],"names":[],"mappings":"AAIA;EACI,YAHa,EAAA","file":"fonts.css","sourcesContent":["\n\n$fontcolor: green;\n\np {\n    color: $fontcolor;\n}"]}

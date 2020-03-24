@@ -1,0 +1,1 @@
+{"version":3,"sources":["variables/variables.scss"],"names":[],"mappings":"AAGA;EACI,iBAHc,EAAA;EAElB;IAGQ,iBALU,EAAA;;AASlB;EACI,iBAVc,EAAA","file":"variables.css","sourcesContent":["\n$icons: darkorange;\n\n.iconfonts div {\n    color: $icons;\n    .icons3 {\n        color: $icons;\n    }\n}\n\n.icons3 p {\n    color: $icons;\n}"]}
