@@ -110,6 +110,8 @@ nav {
 	text-transform: uppercase;
 	transform: scaleX(0);
 	animation: revealTextReverse 1s ease-in-out forwards;
+	letter-spacing: 3px;
+	text-shadow: 0 0 5px rgb(2, 247, 255)
 }
 .bannerText h1
 {
@@ -123,12 +125,15 @@ nav {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: #43BFC7;
+	// background: transparent;
+	// background: rgba(67, 190, 199, 0.493);
+	// border-radius: 25px;
+	// border: rounded;
 	width: 100%;
 	height: 100%;
 	transform-origin: right;
 	animation: revealText 1s ease-in-out forwards;
-	animation-delay: 3s;
+	animation-delay: 1s;
 }
 
 @keyframes revealText
@@ -160,7 +165,7 @@ nav {
 	font-weight: 400;
 	// font-size: 1.2em;
 	animation: fadeIn 1s linear forwards;
-	animation-delay: 5s;
+	animation-delay: 2s;
 }
 @keyframes fadeIn
 {
@@ -201,3 +206,7 @@ nav {
 		opacity: 1;
 	}
 }
+// 
+
+/* Zoom In #1 */
+// 

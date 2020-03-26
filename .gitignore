@@ -15,7 +15,7 @@ desktop.ini
 node_modules/
  
 # Project build
-# dist
+dist
 
 scss
 
