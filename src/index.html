@@ -79,15 +79,15 @@
             
           </div>   
           <!-- <div class="col-md-6"> -->
-          <div class="media-body pt-5" >
-            <h1  class=" d-none d-md-block" class="display-4" class="dental-h1"> <strong> DENTAL  </strong> Clinic</h1>    
+          <div class="media-body pt-5 col-md-6"  >
+            <h1   class=" d-none d-md-block" class="display-4" > <strong class="dental-h1"> DENTAL  </strong> <span class="dental-h1"> Clinic</span>  </h1>    
             
-            <div class="bannerText" >
+            <div id='one' class="bannerText" >
                 <!-- <h1 class="d-none d-md-block text-info mt-4"> DENTAL Clinic</h1><br> -->
                 <!-- <h1  class=" d-none d-md-block" class="ml-6 mt-1" class="display-2 text-info" class="dental-h1"> <strong> DENTAL  </strong> <span> Clinic </span></h1>    -->
                 <!-- <h3>And Make Innovative Design</h3> -->
-                <h2 class="d-none d-md-block" class="display-3" class="mt-0">  An attractive smile makes a lasting impression! </h2>
-                <h5 class="d-none d-md-block" class="card-text text-dark" class="mt-0"> Pain free Dental solutions and treaments...</h5>    
+                <h2 id='one' class="d-none d-md-block"  class="display-3" class="mt-0" >  An attractive smile makes a lasting impression! </h2>
+                <!-- <h5 id='two' class="d-none d-md-block" class="card-text text-dark" class="mt-0"> Pain free Dental solutions and treaments...</h5>     -->
               
               </div>
 
@@ -758,12 +758,49 @@
 
 
 
-  gsap.from('#toothlogo', {
-    duration: 1.9,
-    top: 0,
-    opacity: 0,
-    delay: 1.5
-})
+      gsap.from('#toothlogo', {
+        duration: 1.9,
+        
+        opacity: 0,
+        delay: 1
+    })
+
+    gsap.from('.dental-h1', {
+      duration: 2,
+      
+      opacity: 0,
+      delay: 2,
+      
+      stagger: .6
+      
+    })
+    gsap.from('#one h2', 1.5, {
+      duration: 3,
+      delay: 2.5,
+      left: '100%' ,
+      
+     
+        fontSize: 2,
+        top:5,
+        opacity: 0,
+        delay: 2.3,
+        
+        stagger: .1
+
+    })
+   gsap.from('.two', {
+    duration: 3,
+      delay: 2.5,
+      left: '100%' ,
+      ease: Expo.easeInOut,
+      duration: .5,
+        fontSize: 2,
+        top:5,
+        opacity: 0,
+        delay: 2.3,
+        scale:0.1,
+        stagger: .1
+    })
 
 
    </script>
