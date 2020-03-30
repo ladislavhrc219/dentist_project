@@ -5,21 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+
   
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <script src="./app.js"></script>
+  <!-- <script src="./app.js"></script> -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,900" />
-  <!-- <link rel="stylesheet" href='scss/index.scss'> -->
-  <link rel="stylesheet" href="css/index.css" >
+  <link rel="stylesheet" href='scss/index.scss'>
+  <!-- <link rel="stylesheet" href="css/index.scss" > -->
+  
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/103a988ffd.js"></script>
-  <script src="./app.js"></script>
+  <script src="app.js"></script>
   <title>  Clinic </title>
 </head>
 
@@ -35,11 +37,11 @@
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                  <a class="navbar-brand" href="#">West Denton, Newcastsle Upon Tyne</a>
+                  <a class="navbar-brand text-primary" href="#">West Denton, Newcastsle Upon Tyne</a>
                 </li>
             <li class="nav-item active">
                 
-              <a class="nav-link" href="#">Email Us: dental.clinic@dental.com <span class="sr-only">(current)</span></a>
+              <a class="nav-link text-primary" href="#">Email Us: dental.clinic@dental.com <span class="sr-only">(current)</span></a>
             </li>
             
             <li class="nav-item">
@@ -56,207 +58,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a></a>
-              </li>
-              <!-- ========================================================= -->
-              <!-- ! login modal  -->
-              <!-- ========================================================= -->
-
-              <!-- <li class="nav-item">
-                <div class="container">
-                    <button type="button" class="btn btn-link btn-sl" data-toggle="modal" data-target="#myModal">Login</button>
-                    <div class="modal fade" id="myModal">
-                      <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h2 class="modal-title"> Login to your account </h2>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                          </div>
-                          <div class="modal-body">
-                              <div class="form-box">
-                                  <div id="login-case">    
-                                    <form action="#" method="post" class="validate">
-                                      <div class="form-group">
-                                        <label for="email" class="form-control-label">Email </label>
-                                        <input type="email" name="email" class="form-control" data-fv-notempty="true">
-                                      </div>
-                                      <div class="form-group">
-                                        <label for="" class="form-control-label"> Password</label>
-                                        <input type="password" name="password" class="form-control" data-fv-notempty="true">
-                                      </div>
-                                      <div class="form-group">
-                                        <input type="submit" value="Login" class="btn btn-info">
-                                      </div>
-                                    </form>
-                                  </div>
-                                </div>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-              </li> -->
-              <!-- ========================================================= -->
-              <!-- ! REgister modal -->
-              <!-- ========================================================= -->
-            
-                  <li class="nav-item">
-                      <div class="container">
-                          <button type="button" class="btn btn-link btn-sl"  data-toggle="modal" data-target="#myModal">
-                            Register
-                          </button>
-                          <div class="modal fade" id="myModal">
-                            <div class="modal-dialog modal-lg">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h2 class="modal-title"> Create your account 
-                                </h2>
-                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="form-box">
-                                        <div id="login-case" id="register">           
-                                          <h4> Register to become a dental member   </h4>
-                                          <br> 
-
-                                          <form action="#" method="POST" class="">
-                                              <div class="form-group">
-                                                <label class="form-control-label"> Your name </label>
-                                              <input type="text" name="" id="" class="form-control" placeholder="Enter your fullname">
-                                              </div>
-                                              <div class="form-group">
-                                                <label class="form-control-label"> E-mail</label>
-                                                <input type="email" name="" id="" class="form-control" placeholder="Enter your email address">
-          
-                                              </div>
-                                              <div class="form-group">
-                                                <label class="form-control-label"> Password</label>
-                                                <input type="password" id="" class="form-control">
-      
-                                              </div> <!--? form group-->
-                                                <div class="form-check">
-                                                  <label class="form-check-label">
-                                                  
-                                                  <input type="checkbox" name="" id="" class="form-check-input">
-                                                  I agree to your terms of service 
-                                                </label>
-                                                </div> <!-- ? form check-->
-                                                <div class="form-grouo">
-                                                  <input type="submit" value="Become a member" class="btn btn-info">
-                                              
-                                                </div> <!-- ? form group-->
-                                          </form>
-                                          
-                                        </div>
-                                      </div>
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
-                                
-                              </div>
-                            </div>
-                          </div>
-                          
-                        </div>
-                    </li> 
-
-
-
-<!-- !======================================================================= -->
-<!-- ?REGISTER @ -->
-<!-- !======================================================================= -->
-                  <li> 
-                    <div class="container"> 
-         <div class="modal fade" id="account-modal ">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <a href="#" class="close-modal" data-dismiss="modal"><i class="fa fa-times"> </i>  </a>    
-                            <div class="modal-body">
-                              <div class="form-box">
-                                <div id="login-case">
-                                  
-                                  <h2 class="modal-title"> Login to your account 
-                                    </h2>
-                                  <h4> If you already a member login here   </h4>
-                                  <form action="#" method="POST" class="validate">
-                                    <label class="form-group">
-                                      <label class="form-control-label"> Email Us</label>
-                                      <input type="email" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                      <label class="form-control-label"> PassWord</label>
-                                      <input type="password" name="" id="" class="form-control">
-
-                                    </div>
-                                    <div class="form-group">
-                                      <input type="submit" value=" Login" class="btn btn-info">
-                                    </div>
-                                    <!--? .form-grouo -->
-                                  </form>       
-                                <!-- ?login part  -->
-                                </div>
-
-                                <div id="register-case" style="display: none;">
-                                  
-                                    <h2 class="modal-title"> Create your account 
-                                      </h2>
-                                    <h4> Register to become a dental member   </h4>
-                                    <form action="#" method="POST" class="">
-                                        <div class="form-group">
-                                          <label class="form-control-label"> Your name </label>
-                                        <input type="text" name="" id="" class="form-control" placeholder="Enter your fullname">
-                                        </div>
-                                        <div class="form-group">
-                                          <label class="form-control-label"> E-mail</label>
-                                          <input type="email" name="" id="" class="form-control" placeholder="Enter your email address">
-    
-                                        </div>
-                                        <div class="form-group">
-                                          <label class="form-control-label"> Password</label>
-                                          <input type="password" id="" class="form-control">
-
-                                        </div> <!--? form group-->
-                                          <div class="form-check">
-                                            <label class="form-check-label">
-                                            
-                                            <input type="checkbox" name="" id="" class="form-check-input">
-                                            </label>
-                                          </div> <!-- ? form check-->
-                                          <div class="form-grouo">
-                                            <input type="submit" value="Become a member" class="btn btn-info">
-                                        
-                                          </div> <!-- ? form group-->
-                                    </form>
-                              </div> <!--? login case-->
-                            </div> <!-- ? form box-->
-                        </div> <!-- ? modal body -->
-                      </div> <!--? modal content -->
-                    </div> <!--? modal dialog -->
-                    
-                  
-                  </div> <!-- ? modal-->
-                </li> 
-
-
-
-
-
-
-
-
-
-
-
-                   
-                  
-                  </div>
-
-
-              
+              </li>                                
             </ul>
+          </div>
 
           
         </div>
@@ -267,31 +71,27 @@
 <!-- ?  MAIN IMG -->
 <!-- ? ======================================================================= -->
 
-  <div class="card mb-3 border-0 ">
+  <div class="card mb-3 border-0">
       <div class="media">   
-        <div class="col-md-6">
+        <div class="col-md-4">
           
-            <img class="position-absolute"  class="img-responsive " class="img-fluid" class="" src="./img/Dentist2.jpg" alt="logo"   style="max-width: 100%"> 
+            <img class="position-relative"  class="img-fluid" id="toothlogo" src="./img/Dentist2.jpg" alt="logo"  class="pl-5" > 
             
           </div>   
           <!-- <div class="col-md-6"> -->
-          <div class="media-body">
-            <!-- <h1  class=" d-none d-md-block" class="display-4" class="dental-h1"> <strong> DENTAL  </strong> Clinic</h1>     -->
+          <div class="media-body pt-5" >
+            <h1  class=" d-none d-md-block" class="display-4" class="dental-h1"> <strong> DENTAL  </strong> Clinic</h1>    
             
-            <div class="bannerText">
-                <!-- <h1>DENTAL Clinic</h1><br> -->
-                <h1  class=" d-none d-md-block" class="ml-6" class="display-2" class="dental-h1"> <strong> DENTAL  </strong> <span> Clinic </span></h1>   
+            <div class="bannerText" >
+                <!-- <h1 class="d-none d-md-block text-info mt-4"> DENTAL Clinic</h1><br> -->
+                <!-- <h1  class=" d-none d-md-block" class="ml-6 mt-1" class="display-2 text-info" class="dental-h1"> <strong> DENTAL  </strong> <span> Clinic </span></h1>    -->
                 <!-- <h3>And Make Innovative Design</h3> -->
                 <h2 class="d-none d-md-block" class="display-3" class="mt-0">  An attractive smile makes a lasting impression! </h2>
                 <h5 class="d-none d-md-block" class="card-text text-dark" class="mt-0"> Pain free Dental solutions and treaments...</h5>    
-                <!-- <p>Lorem  nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
-                
+              
               </div>
 
 
-            <!-- <h4 class="d-none d-md-block" class="mt-0">  An attractive smile makes a lasting impression! </h4> -->
-            <!-- <h5 class="d-none d-md-block" class="card-text text-dark" class="mt-0"> Pain free Dental solutions and treaments...</h5>           -->
-          </div>      
         </div>      
         </div>
   </div>
@@ -305,35 +105,32 @@
   <!-- * NAVABAR -->
   <!-- * ===================================================================== -->
   <!-- <hr>  -->
-        <nav class="navbar navbar-expand-lg navbar-dark ">
-                <a class="navbar-brand" href="#">HOME</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary text-center" class="" >
+                <a class="navbar-brand col-md-1" href="#">HOME </a>
+                <a class="navbar-brand col-md-1" href="#">CLINIC</a>
+                <a class="navbar-brand col-md-1" href="#">SERVICES </a>
+                <a class="navbar-brand col-md-2" href="#">CONTACT</a>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav ">
-                    <li class="nav-item active">
-                        <a class="navbar-brand" href="#">CLINIC</a>
-                      <!-- <a class="nav-link" href="#">CLINIC <span class="sr-only">(current)</span></a> -->
-                    </li>
-                    
-                    <li class="nav-item">
-                        <!-- <a class="nav-link" href="#">SERVICES </a> -->
-                        <a class="navbar-brand" href="#">SERVICES</a>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                  <ul class="navbar-nav col-md-12">
+                   
+
+                    <li class="nav-item col-md-9">
+                       
+                        <span>
+                     <a  class="navbar-brand col-md-6" href="#">LOGIN  </a>
+                        </span> 
                       </li>
-                    <li class="nav-item">
-                      <!-- <a class="nav-link" href="#">CONTACT US </a>
-                       -->
-                       <a class="navbar-brand" href="#">CONTACT US</a>
-                    </li>
-                    <li class="nav-item">
-                        <!-- <a class="nav-link" href="#">FAQ US </a> -->
-                        <a class="navbar-brand" href="#">FAQ US </a>
+
+                      <li class="nav-item col-md-1">
+                        <span>
+                        <a class="navbar-brand col-md-6" href="#">REGISTER</a>
+                        </span>
+                          
                       </li>
-                      <li class="nav-item">
-                          <a class="navbar-brand" href="#">INFO</a>
-                          <!-- <a class="nav-link" href="#">INFO </a> -->
-                        </li>
                 
                   </ul>
                 </div>
@@ -635,18 +432,18 @@
               <!-- *card start -->
               <div class="col-md-4 my-4"  >
                 <div class="card"  class="cards-pricing"> 
-                  <div class="card-header text-white text-center text-uppercase" id="cards-pricing" >
+                  <div class="card-header text-dark text-center text-uppercase" id="cards-pricing" >
                     <h3 class="cards-pricing"> Standard</h3>
                   </div>
                   <!-- *card title -->
-                  <div class="card-title text-center my-3 ">
+                  <div class="card-title text-info text-center my-3 ">
                     <h4>
                       <sup>$</sup>10.90
                       <sub>/month</sub>
                     </h4>
                   </div>
                   <!-- !list -->
-                  <ul class="list-group list-group-flush pl-2 pr-2 text-center pt-4 bg-dark">
+                  <ul class="list-group list-group-flush pl-2 pr-2 text-center pt-4 bg-ligth">
                       <p class="group-item">One checkup appointment per year</p>
                       <p class="group-item">One 30 minute hygiene appointments per year</p>
                       <!-- <p class="group-item">One routine digital x-rays per year as required</p> -->
@@ -655,7 +452,7 @@
                   </ul>
                   <!-- *card footer -->
                   <div class="card-footer">
-                    <a href="" class="btn btn-outline-dark btn-block text-capitalize">Sign up</a>
+                    <a href="" class="btn bg-info btn-block text-light text-capitalize">Sign up</a>
                   </div>
                 </div>
               </div>
@@ -663,25 +460,25 @@
               <!-- *card start -->
               <div class="col-md-4 my-4">
                   <div class="card"> 
-                    <div class="card-header text-white text-uppercase text-center " id="cards-pricing">
+                    <div class="card-header text-dark text-uppercase text-center " id="cards-pricing">
                       <h3> PREMIUM</h3>
                     </div>
                     <!-- *card title -->
-                    <div class="card-title text-center my-3">
+                    <div class="card-title  text-info text-center my-3">
                       <h4>
                         <sup>$</sup>15.90
                         <sub>/month</sub>
                       </h4>
                     </div>
                     <!-- !list -->
-                    <ul class="list-group  pl-2 pr-2 list-group-flush text-center pt-4  bg-dark">
+                    <ul class="list-group  pl-2 pr-2 list-group-flush text-center pt-4  bg-light">
                       <p class="group-item">Two checkup appointments per year </p>
                       <p class="group-item">Two routine digital x-rays per year as required</p>
                       <p class="group-item">10% discount on any fillings, crowns, inlays/onlays, root fillings, bridges, dentures and tooth extractions carried out by our general dentists</p>
                     </ul>
                     <!-- *card footer -->
                     <div class="card-footer">
-                      <a href="" class="btn btn-outline-dark btn-block text-capitalize">Sign up</a>
+                      <a href="" class="btn text-light btn-block bg-info text-uppercase">Sign up</a>
                     </div>
                   </div>
                 </div>
@@ -689,25 +486,25 @@
                 <!-- *card start -->
               <div class="col-md-4 my-4">
                   <div class="card"> 
-                    <div class="card-header text-white text-uppercase text-center "  id="cards-pricing">
+                    <div class="card-header text-dark bg-light text-uppercase text-center "  id="cards-pricing">
                       <h3> PRO </h3>
                     </div>
                     <!-- *card title -->
-                    <div class="card-title text-center my-3">
+                    <div class="card-title text-center text-info  my-3">
                       <h4>
                         <sup>$</sup>12.90
                         <sub>/month</sub>
                       </h4>
                     </div>
                     <!-- !list -->
-                    <ul class="list-group  pl-2 pr-2 list-group-flush text-center pt-4  bg-dark">
+                    <ul class="list-group  pl-2 pr-2 list-group-flush text-center pt-4  bg-light">
                         <p class="group-item">Three checkup appointments per year</p>
                         <p class="group-item">Four 30 minute hygiene appointments per year</p>
                         <p class="group-item">15% discount on any fillings, crowns, inlays/onlays, root fillings, bridges, dentures and tooth extractions carried out by our general dentists</p>
                     </ul>
                     <!-- *card footer -->
                     <div class="card-footer">
-                      <a href="" class="btn btn-outline-dark btn-block text-capitalize">Sign up</a>
+                      <a href="" class="btn  bg-info text-light btn-block text-uppercase"  >Sign up</a>
 
                       
                     </div>
@@ -957,25 +754,19 @@
     </section>
 
 
-
-    
-
+   <script>
 
 
 
-    
+  gsap.from('#toothlogo', {
+    duration: 1.9,
+    top: 0,
+    opacity: 0,
+    delay: 1.5
+})
 
 
-
-
-
-
-
-
-
-
-
-
+   </script>
 
 
     <!-- Optional JavaScript -->
@@ -986,12 +777,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
-    <script>
-      
-      
-
-
-    </script>
     
   </body>
 

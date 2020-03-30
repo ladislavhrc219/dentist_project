@@ -4,12 +4,13 @@ html {
     font-family: 'Nunito Sans', sans-serif;
     padding-left: 3rem;
     padding-right: 3rem;
-    background-color: whitesmoke;
+    background-color: rgb(245, 245, 245);
  
 }
 
 .jumbotron {
-        background-color: white;
+		background-color: white;
+		// color: orange;
     }
 
 .navbar  {
@@ -18,7 +19,8 @@ html {
 
 .media{
     padding: 5em 5em;    
-    height: 25rem;
+	height: 25rem;
+	position: absolute;
 }
 body {
     height: 100%;
@@ -29,7 +31,7 @@ body {
         font-size: 4rem;
     }
     h3, p {
-        color:  rgb(251, 255, 250);
+        color:  rgb(57, 221, 16);
     }
     p {
         font-size: 18px;
@@ -40,7 +42,10 @@ body {
 
 }
 
-
+#navbarText {
+	font-size: 3rem;
+	// padding-top: 4rem;
+}
 #sticky-footer {
     flex-shrink: none;
   }
@@ -75,7 +80,8 @@ nav {
 
 .nav-link {
     // color: purple;
-    color: rgb(15, 36, 105);;
+	color: rgb(15, 36, 105);
+	// color: red;
     font-weight: bold;
     // font-size: 1rem;
 }
@@ -84,129 +90,8 @@ nav {
     background-color: #43BFC7;
 }
 
-/* ?========================================================================== */
-/* banner */
-/* ========================================================================== */
-
-.bannerText
-{
-    // margin-left: 1px;
-    background-color: white;
-    color: #43BFC7;
-	position: absolute;
-	top: 50%;
-    left: 40%;
-    align-content: center;
-	transform: translateY(-50%);
-	max-width: 855px;
+#toothlogo{
+	padding-left: 2rem;
+	// width: 150%;
+	// style="max-width: 1000%"
 }
-.bannerText h1
-{
-	position: relative;
-	margin: 0;
-	padding: 0;
-	display: inline-block;
-	transform-origin: left;
-	text-transform: uppercase;
-	transform: scaleX(0);
-	animation: revealTextReverse 1s ease-in-out forwards;
-	letter-spacing: 3px;
-	text-shadow: 0 0 5px rgb(2, 247, 255)
-}
-.bannerText h1
-{
-	font-size: 6em;
-	animation-delay: 2s;
-}
-
-.bannerText h1:before
-{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	// background: transparent;
-	// background: rgba(67, 190, 199, 0.493);
-	// border-radius: 25px;
-	// border: rounded;
-	width: 100%;
-	height: 100%;
-	transform-origin: right;
-	animation: revealText 1s ease-in-out forwards;
-	animation-delay: 1s;
-}
-
-@keyframes revealText
-{
-	0%
-	{
-		transform: scaleX(1);
-	}
-	100%
-	{
-		transform: scaleX(0);
-	}
-}
-@keyframes revealTextReverse
-{
-	0%
-	{
-		transform: scaleX(0);
-	}
-	100%
-	{
-		transform: scaleX(1);
-	}
-}
-.bannerText h2, h5
-{
-    color: #43BFC7;
-	opacity: 0;
-	font-weight: 400;
-	// font-size: 1.2em;
-	animation: fadeIn 1s linear forwards;
-	animation-delay: 2s;
-}
-@keyframes fadeIn
-{
-	0%
-	{
-		opacity: 0;
-	}
-	100%
-	{
-		opacity: 1;
-	}
-}
-.bannerText a
-{
-	opacity: 0;
-	display: inline-block;
-	margin: 20px 0 0;
-	padding: 10px 20px;
-	background: #000;
-	color: #fff;
-	font-weight: 700;
-	text-decoration: none;
-	font-size: 1.2em;
-	letter-spacing: 1px;
-	animation: fadeInBottom 0.5s linear forwards;
-	animation-delay: 5.5s;
-}
-@keyframes fadeInBottom
-{
-	0%
-	{
-		transform: translateY(50px);
-		opacity: 0;
-	}
-	100%
-	{
-		transform: translateY(0);
-		opacity: 1;
-	}
-}
-// 
-
-/* Zoom In #1 */
-// 
