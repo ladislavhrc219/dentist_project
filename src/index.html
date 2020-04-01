@@ -86,8 +86,14 @@
                 <!-- <h1 class="d-none d-md-block text-info mt-4"> DENTAL Clinic</h1><br> -->
                 <!-- <h1  class=" d-none d-md-block" class="ml-6 mt-1" class="display-2 text-info" class="dental-h1"> <strong> DENTAL  </strong> <span> Clinic </span></h1>    -->
                 <!-- <h3>And Make Innovative Design</h3> -->
-                <h2 id='one' class="d-none d-md-block"  class="display-3" class="mt-0" >  An attractive smile makes a lasting impression! </h2>
-                <!-- <h5 id='two' class="d-none d-md-block" class="card-text text-dark" class="mt-0"> Pain free Dental solutions and treaments...</h5>     -->
+                <h2 id='one' class="d-none d-md-block"   class="mt-0" >  An attractive smile makes a lasting impression!
+                </h2>
+              <br>
+                <h2 class='two' class="d-none d-md-block"  class="mt-0"> 
+                      Pain free Dental solutions and treaments...
+                </h2>
+                
+                
               
               </div>
 
@@ -105,34 +111,38 @@
   <!-- * NAVABAR -->
   <!-- * ===================================================================== -->
   <!-- <hr>  -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary text-center" class="" >
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary text-center" >
                 <a class="navbar-brand col-md-1" href="#">HOME </a>
                 <a class="navbar-brand col-md-1" href="#">CLINIC</a>
-                <a class="navbar-brand col-md-1" href="#">SERVICES </a>
-                <a class="navbar-brand col-md-2" href="#">CONTACT</a>
-
+                <!-- <a class="navbar-brand col-md-1" href="#">SERVICES </a>  -->
+                <a class="navbar-brand col-md-1" href="#">SERVICES</a> 
+                <!-- <a class="navbar-brand col-md-1" href="#">CONTACT</a>  -->
+                <a class="navbar-brand col-md-5" href="#"></a> 
+                <!-- <a class="navbar-brand col-md-1" href="#">CONTACT</a>  -->
+                <a class="navbar-brand col-md-1" href="#">LOGIN  </a>
+                <a class="navbar-brand col-md-1" href="#">REGISTER</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse " id="navbarNav">
-                  <ul class="navbar-nav col-md-12">
+                  <!-- <ul class="navbar-nav col-md-12"> -->
                    
 
-                    <li class="nav-item col-md-9">
+                    <!-- <li class="nav-item col-md-9">
                        
                         <span>
-                     <a  class="navbar-brand col-md-6" href="#">LOGIN  </a>
+                     
                         </span> 
                       </li>
 
                       <li class="nav-item col-md-1">
                         <span>
-                        <a class="navbar-brand col-md-6" href="#">REGISTER</a>
+                        
                         </span>
                           
-                      </li>
+                      </li> -->
                 
-                  </ul>
+                  <!-- </ul> -->
                 </div>
               </nav>
 
@@ -756,51 +766,40 @@
 
    <script>
 
-
-
-      gsap.from('#toothlogo', {
+    gsap.from('#toothlogo', {
         duration: 1.9,
-        
         opacity: 0,
         delay: 1
     })
-
     gsap.from('.dental-h1', {
       duration: 2,
-      
       opacity: 0,
       delay: 2,
-      
       stagger: .6
-      
     })
     gsap.from('#one h2', 1.5, {
       duration: 3,
       delay: 2.5,
-      left: '100%' ,
-      
-     
-        fontSize: 2,
-        top:5,
-        opacity: 0,
-        delay: 2.3,
-        
-        stagger: .1
+      left: '100%',
+      top:5,
+      opacity: 0,
+      delay: 2.3,
+      stagger: .1  
+    });
 
-    })
-   gsap.from('.two', {
-    duration: 3,
-      delay: 2.5,
-      left: '100%' ,
-      ease: Expo.easeInOut,
-      duration: .5,
-        fontSize: 2,
-        top:5,
-        opacity: 0,
-        delay: 2.3,
-        scale:0.1,
-        stagger: .1
-    })
+    
+
+   gsap.to('.two', 2.5, {
+      x: '30%',
+      delay: 1.5,
+      ease: Expo.easyIn, y: 20,
+      duration: .9,
+      fontSize: 32,
+      top:5,
+      rotate:'360%',
+      color: 'turquoise'
+        
+    });
 
 
    </script>
