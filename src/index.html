@@ -80,12 +80,10 @@
           </div>   
           <!-- <div class="col-md-6"> -->
           <div class="media-body pt-5 col-md-6"  >
-            <h1   class=" d-none d-md-block" class="display-4" > <strong class="dental-h1"> DENTAL  </strong> <span class="dental-h1"> Clinic</span>  </h1>    
+            <h1   class=" d-none d-md-block" class="display-1" > <strong class="dental-h1"> DENTAL  </strong> <span class="dental-h1"> Clinic</span>  </h1>    
             
             <div id='one' class="bannerText" >
-                <!-- <h1 class="d-none d-md-block text-info mt-4"> DENTAL Clinic</h1><br> -->
-                <!-- <h1  class=" d-none d-md-block" class="ml-6 mt-1" class="display-2 text-info" class="dental-h1"> <strong> DENTAL  </strong> <span> Clinic </span></h1>    -->
-                <!-- <h3>And Make Innovative Design</h3> -->
+               
                 <h2 id='one' class="d-none d-md-block pl-5"   class="mt-0" >  An attractive smile makes a lasting impression!
                 </h2>
               <br>
@@ -125,24 +123,7 @@
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse " id="navbarNav">
-                  <!-- <ul class="navbar-nav col-md-12"> -->
-                   
-
-                    <!-- <li class="nav-item col-md-9">
-                       
-                        <span>
-                     
-                        </span> 
-                      </li>
-
-                      <li class="nav-item col-md-1">
-                        <span>
-                        
-                        </span>
-                          
-                      </li> -->
-                
-                  <!-- </ul> -->
+                  
                 </div>
               </nav>
 
@@ -152,7 +133,8 @@
   <!--  IMAGE -->
   <!-- ============================================================= -->
               <div class="card mb-3 border-0">
-                  <img class="card-img-top" class="img-fuild" src="./img/banner-1.jpg" alt="Card image cap">
+                  <img class="card-img-top" id="backgroundimg" class="img-fuild" src="./img/banner-1.jpg" alt="Card image cap">
+                  <div class="btn btn-info"> ABOUT US</div>
                   <div class="card-body">
                     <!-- <h5 class="card-title">ABOUT US </h5> -->
                     <section id="contact" class="py-6">
@@ -161,14 +143,15 @@
                             <div class="col col-12 text-center text-light">
                              
                                 <h2 class="display-6 text-dark mb-1" class="about__us">
-                                    ABOUT US
+                                    <!-- ABOUT US -->
+                                    <!-- <div class="btn btn-primary"> ABOUT US</div> -->
                                     <!-- <strong> ABOUT US</strong> -->
                                   </h2>
                             </div>
                           </div>  
                         </div>
                       </section>   
-                    <p class="card-text text-dark border-0">
+                    <p class="card-text text-dark border-0" id="paragr">
                         Arrange a dental check-up for all the family at our friendly practice in Brooklyn. Here at Family Dental Practice, we provide a variety of dental treatments for both NHS and private patients. Our proficient dentists have more than 100 years of combined experience which they utilise when undertaking all procedures. This wealth of experience ensures that we have the knowledge and the capability to make even the most nervous of patients feel at ease and comfortable . Tailoring all treatments to your needs, we carry out everything from general check-ups to cosmetic dentistry, including veneers and teeth whitening. Unlike other practices, our surgery is family run and this enables us to keep patients at the heart of our service. Transform your smile and feel more confident. Book your appointment today!</p>
                   
                   </div>
@@ -717,6 +700,8 @@
 
     </section>
 
+   
+
 
    <script>
 
@@ -729,7 +714,8 @@
       duration: 2,
       opacity: 0,
       delay: 2,
-      stagger: .6
+      stagger: .6, 
+      color: 'aqua'
     })
     gsap.from('#one h2', 1.5, {
       duration: 3,
@@ -740,6 +726,7 @@
       delay: 2.3,
       stagger: .1,
       x: 200,
+      color: 'navy'
       
     });
    gsap.to('.two', 2.5, {
@@ -747,9 +734,13 @@
       duration: 0.5,
       fontSize: 30,
       x: 150,
-      color: 'navy'
+      color: 'aqua'
     });
 
+
+
+
+    
 
    </script>
 
